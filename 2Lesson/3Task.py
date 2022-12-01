@@ -10,7 +10,7 @@ def func(n):
 
     li = []
 
-    for i in range(1, n):
+    for i in range(1, n+1):
         b = (1 + (1 / i)) ** i
         li.append(b)
 
@@ -18,4 +18,4 @@ def func(n):
     print(f"{n}: {sum(li)}")
 
 
-func(5)
+func(3)

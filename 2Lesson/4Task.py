@@ -21,7 +21,7 @@ def find_product_ininterval (n, m, p):
     string_of_interval = (data_read.read()).split()
     data_read.close()
 
-    print(f"{string_of_interval[m]}(index{m}){string_of_interval[p]}(index{p})={int(string_of_interval[m]) + int(string_of_interval[p])}")
+    print(f"{string_of_interval[m]}(index{m})*{string_of_interval[p]}(index{p})={int(string_of_interval[m]) * int(string_of_interval[p])}")
 
 
 find_product_ininterval(5, 7, 4)
