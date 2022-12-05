@@ -17,7 +17,7 @@ for i in range(5):
 rounded_random_list = []
 
 for i in range(len(random_list)):
-    t = round((random_list[i] % 1), 2)
+    t = round((random_list[i]), 2)
     rounded_random_list.append(t)
 
 min_rounded_random_list = rounded_random_list[0]
