@@ -37,5 +37,5 @@ def factor(x):
     print(factors)
 
 
-factor(286)
+factor(15684)
 
