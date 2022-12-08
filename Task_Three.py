@@ -12,8 +12,10 @@ def encode_rle(wip_text):
             if prev_char:
                 str_code += str(count) + prev_char
             count = 1
+            print(char.isdigit())
             prev_char = char
         else:
+            print(char.isdigit())
             count += 1
     str_code += str(count) + prev_char
     with open('Task_Three_encoded', 'w') as data:
@@ -21,17 +23,17 @@ def encode_rle(wip_text):
     return str_code
 
 
-str_code = encode_rle("abbahuBbabuubaBabaBoooOoye")
+str_code = encode_rle("abbahuBbabuubaBabaBoooOoye1337")
 print(str_code)
 
 with open('Task_Three_encoded', 'r') as data:
     my_text2 = data.read()
 
 
-def decoding_rle(ss: str):
+def decoding_rle(wip_text: str):
     count = ''
     str_decode = ''
-    for char in ss:
+    for char in wip_text:
         if char.isdigit():
             count += char
         else:
