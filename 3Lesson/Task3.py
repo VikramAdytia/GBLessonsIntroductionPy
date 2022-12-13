@@ -14,11 +14,14 @@ for i in range(5):
     n = round(random.uniform(1.5, 25.5), 2)
     random_list.append(n)
 
-rounded_random_list = []
+#rounded_random_list = []
 
-for i in range(len(random_list)):
-    t = round((random_list[i]), 2)
-    rounded_random_list.append(t)
+# for i in range(len(random_list)):
+#     t = round((random_list[i]), 2)
+#     rounded_random_list.append(t)
+
+rounded_random_list = [i-x for i in random_list for x in random_list]
+print(rounded_random_list)
 
 min_rounded_random_list = rounded_random_list[0]
 max_rounded_random_list = rounded_random_list[0]

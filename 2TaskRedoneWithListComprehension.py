@@ -18,7 +18,7 @@
 #
 #     print(l)
 #
-#
+# 
 # fact(4)
 
 l=[];  l=[l[-1] for x in range(1,4+1) if not l.append(x*l[-1] if l else 1)]

@@ -22,6 +22,10 @@ def priming(x):
 def factor(x):
     factors = []
 
+    # for i in range(2, int(math.sqrt(x)) + 1):
+    #     if x % i == 0:
+    #         factors.append(i)
+    #         x //= i
     for i in range(2, int(math.sqrt(x)) + 1):
         if x % i == 0:
             factors.append(i)

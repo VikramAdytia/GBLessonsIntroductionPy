@@ -12,14 +12,19 @@ def find_product_ininterval (n, m, p):
 
     interval_nminusn = range(-n, n + 1)
 
-    data_write = open('file.txt', 'w')
-    for i in interval_nminusn:
-        data_write.write(str(i) + '\n')
-    data_write.close()
 
-    data_read = open('file.txt', 'r')
-    string_of_interval = (data_read.read()).split()
-    data_read.close()
+    # data_write = open('file.txt', 'w')
+    # for i in interval_nminusn:
+    #     data_write.write(str(i) + '\n')
+    # data_write.close()
+
+    with open('file.txt', 'w') as data_write:
+        for i in interval_nminusn:
+            data_write.write(str(i) + '\n')
+
+    # data_read = open('file.txt', 'r')
+    # string_of_interval = (data_read.read()).split()
+    # data_read.close()
 
     print(f"{string_of_interval[m]}(index{m})*{string_of_interval[p]}(index{p})={int(string_of_interval[m]) * int(string_of_interval[p])}")
 
