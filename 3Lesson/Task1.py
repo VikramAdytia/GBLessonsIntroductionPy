@@ -9,17 +9,23 @@
 
 import random
 
-random_list = []
+# random_list = []
 sum_o_uev_i_rl = 0
+#
+# for i in range(5):
+#     n = random.randint(1, 25)
+#     random_list.append(n)
 
-for i in range(5):
-    n = random.randint(1, 25)
-    random_list.append(n)
+random_list = [random.randint(1, 25) for i in range(5)]
 
 print(random_list)
 
-for j in range(len(random_list)):
-    if j % 2:
-        sum_o_uev_i_rl += random_list[j]
+# for j in range(len(random_list)):
+#     if j % 2:
+#         sum_o_uev_i_rl += random_list[j]
+
+for key, value in enumerate(random_list):
+    if key % 2:
+        sum_o_uev_i_rl += random_list[key]
 
 print(sum_o_uev_i_rl)
